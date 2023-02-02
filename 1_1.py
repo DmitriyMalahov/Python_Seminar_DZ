@@ -13,4 +13,3 @@ number = number // 10
 number1 = number % 10
 
 print(f'Сумма цифр трехзначного числа {n} равна: {number1 + number2 + number3}')
-12
