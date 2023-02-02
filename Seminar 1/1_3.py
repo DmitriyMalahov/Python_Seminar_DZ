@@ -9,3 +9,21 @@
 # 385916 -> yes
 # 123456 -> no
 
+n = int(input('Введите шесть чисел номера билета: '))
+
+number1 = n % 10
+number = n // 10
+number2 = number % 10
+number = number // 10
+number3 = number % 10
+sum1 = number1 + number2 + number3
+
+number4 = n // 1000 % 10
+number = n // 10000
+number5 = number % 10
+number = number // 10
+number6 = number % 10
+sum2 = number4 + number5 + number6
+
+result = 'YES' if (sum1 == sum2) else 'NO'
+print(result)
