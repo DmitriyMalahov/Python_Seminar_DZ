@@ -12,4 +12,3 @@ while 2**degree < num:
     num_degree = 2**degree
     degree += 1
     print(num_degree)
-
