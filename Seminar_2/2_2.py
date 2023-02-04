@@ -17,5 +17,5 @@ product = int(input('Введите произведение чисел: '))
 for num_x in range(sum-1):
     num_y = sum-num_x
     if(product == num_x*num_y):
-        print(f'Число X число = {num_x}; Число Y число = {num_y}.')
+        print(f'Число X = {num_x}; Число Y = {num_y}.')
         break
