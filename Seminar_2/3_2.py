@@ -5,3 +5,11 @@
 # Пример:
 # 10 -> 1 2 4 8
 
+num = int(input('Введите число N: '))
+
+degree = 0
+while 2**degree < num:
+    num_degree = 2**degree
+    degree += 1
+    print(num_degree)
+
