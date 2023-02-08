@@ -27,3 +27,47 @@
 # ноутбук
 
 # 12
+
+word = input('Введите слово:').upper()
+
+rus_dict = \
+{
+1: 'АВЕИНОРСТ',
+2: 'ДКЛМПУ',
+3: 'БГЁЬЯ',
+4: 'ЙЫ',
+5: 'ЖЗХЦЧ',
+8: 'ФЩЪ',
+9: 'ШЭЮ',
+10:'ФЩЪ'
+}
+
+eng_dict = \
+{
+1: 'AEIOULNSTR',
+2: 'DG',
+3: 'BCMP',
+4: 'FHVWY',
+5: 'K',
+8: 'JX',
+9: 'JX',
+10:'QZ'
+}
+
+import re 
+def has_cyrillic(text):
+    return bool(re.search('[а-яА-Я]', text))
+sum = 0
+if has_cyrillic(word):
+    for i in word:
+        for key, value in rus_dict.items():
+            if i in value:
+                sum = sum + key
+    
+else:
+    for i in word:
+        for key, value in eng_dict.items():
+            if i in value:
+                sum = sum + key
+print(f'Стоимость слова {word} равна {sum}')
+
