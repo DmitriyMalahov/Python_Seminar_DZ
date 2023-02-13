@@ -13,3 +13,27 @@
 # 1 2 3 4
 
 # 9
+
+number_bushes = int(input('Введите количество кустов на грядке: '))
+
+number_list_berries = []
+sequence_number_bushes = 1
+
+for number_input in range(number_bushes):
+    bush = int(input(f'Введите число ягод на кусте {sequence_number_bushes}: '))
+    number_list_berries.append(bush)
+    sequence_number_bushes += 1
+
+for i in range(len(number_list_berries)-1):
+    if i == 0:
+        i += 1
+        sum = number_list_berries[0] + number_list_berries[1] + number_list_berries[2]
+    if i == number_list_berries[number_bushes-1]:
+        i -=1
+        sum = number_list_berries[-1] + number_list_berries[-2] + number_list_berries[-3]
+    if sum < number_list_berries[i] + number_list_berries[i-1] + number_list_berries[i+1]:
+            sum = number_list_berries[i] + number_list_berries[i-1] + number_list_berries[i+1]
+    # print(sum)
+    # print(i)
+
+print(sum)
