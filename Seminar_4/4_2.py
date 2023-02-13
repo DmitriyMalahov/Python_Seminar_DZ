@@ -26,12 +26,10 @@ for number_input in range(number_bushes):
 
 for i in range(len(number_list_berries)-1):
     if i == 0:
-        # i += 1
         max_sum_berries = number_list_berries[0] + number_list_berries[1] + number_list_berries[2]
     if i == number_list_berries[number_bushes-1]:
-        # i -=1
         max_sum_berries = number_list_berries[-1] + number_list_berries[-2] + number_list_berries[-3]
     if max_sum_berries < number_list_berries[i] + number_list_berries[i-1] + number_list_berries[i+1]:
-            max_sum_berries = number_list_berries[i] + number_list_berries[i-1] + number_list_berries[i+1]
+        max_sum_berries = number_list_berries[i] + number_list_berries[i-1] + number_list_berries[i+1]
 
 print(f'Максимальное число ягод составляет: {max_sum_berries}')
