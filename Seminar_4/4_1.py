@@ -11,7 +11,7 @@
 
 # 6 12
 
-size_list_one = int(input('Введите длину первого массива: '))
+size_list_one = int(input('Введите длину первого множества: '))
 number_list_one = []
 sequence_number_one = 1
 
@@ -20,7 +20,7 @@ for number_input in range(size_list_one):
     number_list_one.append(number)
     sequence_number_one += 1
 
-size_list_two = int(input('Введите длину второго массива: '))
+size_list_two = int(input('Введите длину второго множества: '))
 number_list_two = []
 sequence_number_two = 1
 
@@ -36,4 +36,4 @@ for i in range(size_list_one):
             number_list_result.append(number_list_one[i])
 
 number_list_result_set = list(set(number_list_result))
-print(sorted(number_list_result_set))
+print(f'Данные числа встречаются в обоих множествах: {sorted(number_list_result_set)}')
