@@ -17,4 +17,4 @@ def degree_number(a, b):
 a = int(input('Введите число А: '))
 b = int(input('Введите число B: '))
 
-print(f'Число {a} в степене {b} равно: {degree_number(a,b)}')
+print(f'Число {a} в степени {b} равно: {degree_number(a,b)}')
