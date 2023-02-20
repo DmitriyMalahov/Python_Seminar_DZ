@@ -10,7 +10,7 @@
 # Вывод: 7 9 11 13 15
 
 
-def progression(a1, d, n):
+def progression(a1, d, n: int) -> list:
     result_list = []
     res = 0
     for i in range(1, n + 1):
