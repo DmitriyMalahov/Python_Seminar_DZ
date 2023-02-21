@@ -18,11 +18,6 @@
 # Парам пам-пам
 
 
-# def phrase_sum_letters(phrase):
-#     return sum(1 for i in phrase if i in 'аеёиоуыэюя')
-
-
-
 input_poems_list = []
 for phrase in input('Введите фразы через пробел: ').lower().split():
     input_poems_list.append((phrase))
